@@ -31,3 +31,15 @@ document.querySelector('#trauktiSakni').addEventListener('click', function() {
     sakniesTraukimas();
     document.querySelector('#masyvoPapildymas').value = rezultatas;
 });
+
+// 3. Sukurkite funkciją, kuri mygtuko paspaudimu, sukuria div elementą su klase "elementas-{index}". {index} = elemento numeris
+
+let naujasElementas;
+
+function kurtiElementa() {
+    document.querySelector('#elementaiSuKlase').innerHTML += '<div class="elementas-"></div>';
+}
+
+document.querySelector('#elementoSukurimas').addEventListener('click', function() {
+    kurtiElementa();
+});
