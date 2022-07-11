@@ -35,7 +35,7 @@ document.querySelector('#trauktiSakni').addEventListener('click', function() {
 // 3. Sukurkite funkciją, kuri mygtuko paspaudimu, sukuria div elementą su klase "elementas-{index}". {index} = elemento numeris
 
 let naujasElementas = document.querySelector('#elementaiSuKlase');
-let i = 0;
+let i = 1;
 
 function kurtiElementa() {
     naujasElementas.innerHTML += '<div>Hello world!</div>';
