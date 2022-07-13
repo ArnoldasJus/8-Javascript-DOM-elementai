@@ -7,6 +7,8 @@ function papildymas(){
     let naujiDuomenys = document.querySelector('#masyvoPapildymas').value;
     masyvas.push(naujiDuomenys);
     return masyvas;
+
+    // document.querySelector("#rezultatas").innerHtml = masyvas;
 }
 
 document.querySelector('#pildytiMasyva').addEventListener('click', function() {
@@ -17,7 +19,15 @@ document.querySelector('#pildytiMasyva').addEventListener('click', function() {
     }
 
     document.querySelector('#masyvoPapildymas').value = '';
+
+    // let elementas;
+    // elementas = document.querySelector("#elementas").value;
+
+    // masyvas.push(elementas);
+    // console.log(masyvas);
 });
+
+// document.querySelector('#pildytiMasyva').addEventListener('click', masyvoPildymas);
 
 // 2. Pasinaudodami ciklu, sukurkite funkciją, kuri traukia kvadratinę šaknį iš skaičiaus.
 let rezultatas;
